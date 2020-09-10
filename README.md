@@ -1,4 +1,4 @@
-# mithril-ts-starter
+# mithril-ts-example-filter
 
 ```
 npm install 

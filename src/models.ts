@@ -1,7 +1,8 @@
 type TypeSystem = "static" | "dynamic";
 type Paradigm = "procedural" | "oop" | "functional";
 
-type FilterKey = "typeSystem" | "paradigm"
+type FilterKey = "typeSystem" | "paradigm";
+
 
 interface ProgrammingLanguage {
     name: string,

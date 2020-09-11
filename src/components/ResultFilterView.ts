@@ -16,7 +16,7 @@ export default function ResultFilterComponent(): m.Component<Attrs> {
                     vnode.attrs.filterOptionSelections.map(optionSelection => 
                         m("button", {
                             class: (optionSelection.isSelected)?
-                                "btn btn-sm btn-primary mr-1" :
+                                "btn btn-sm btn-primary mr-1 " :
                                 "btn btn-sm btn-outline-primary mr-1",
                             onclick: () => {
                                 vnode.attrs.onFilterOptionSelected(optionSelection.option);

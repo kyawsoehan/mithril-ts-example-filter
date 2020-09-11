@@ -1,6 +1,6 @@
-import {ProgrammingLanguage, TypeSystem, Paradigm, FilterOption, FilterCriteria, FilterOptionSelection} from './models';
+import {ProgrammingLanguage, FilterKey, TypeSystem, Paradigm, FilterOption, FilterCriteria, FilterOptionSelection} from './models';
 
-let typeSystemOptions:FilterOption<TypeSystem>[] = [
+let typeSystemOptions:FilterOption<FilterKey, TypeSystem>[] = [
     {
         label: "Static",
         key: "typeSystem",
@@ -13,7 +13,7 @@ let typeSystemOptions:FilterOption<TypeSystem>[] = [
     }
 ];
 
-let paradigmOptions:FilterOption<Paradigm>[] = [
+let paradigmOptions:FilterOption<FilterKey, Paradigm>[] = [
     {
         label: "Procedural",
         key: "paradigm",
@@ -33,4 +33,12 @@ let paradigmOptions:FilterOption<Paradigm>[] = [
 
 export function getAllFilters(): FilterOption[] {
     return [...typeSystemOptions, ...paradigmOptions];
+}
+
+export function getTypeSystemFilters(): FilterOption[] {
+    return [...typeSystemOptions];
+}
+
+export function getParadigmFilters(): FilterOption[] {
+    return [...paradigmOptions];
 }
